@@ -1,9 +1,12 @@
-import { createRoot } from '@remix-run/component'
+import { myCreateRoot } from './utils/myCreateRoot'
 
 function App() {
   return () => (
-    <div>test</div>
+    <div>
+      <h1>Hello, Remix 3 Renderer!</h1>
+      <p>テスト</p>
+    </div>
   )
 }
 
-createRoot(document.getElementById('root')!).render(<App />)
+myCreateRoot(document.getElementById('root')!).render(<App />)
